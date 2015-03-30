@@ -32,6 +32,7 @@ var cmd = v.cmd(args[0]);
 // execute passed cmd with args, once prep is finished
 
 q.allSettled([idx,cfg, getIndex, getConfig])
+// eventually we will want to update the index here (scanning all files and making sure it matches current files)
   .then(function (results) {
     var allSet = _.every(results, function (promise) {return promise.value;});
     console.log('promises', results);

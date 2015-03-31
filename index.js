@@ -22,7 +22,7 @@ var configIO = $require('lib/io/config');
 var idx = indexIO.exists();
 var cfg = configIO.exists();
 var getIndex = idx.then(function (exists) { return indexIO.get(exists)});
-var getConfig = cfg.then(function (exists) {return configIO.get(exists)});
+var getConfig = cfg.then(function (exists) { return configIO.get(exists)});
 
 // store and validate args
 
@@ -31,13 +31,13 @@ var cmd = v.cmd(args[0]);
 
 // execute passed cmd with args, once prep is finished
 
-q.allSettled([idx,cfg, getIndex, getConfig])
+q.allSettled([idx, cfg, getIndex, getConfig])
 // eventually we will want to update the index here (scanning all files and making sure it matches current files)
   .then(function (results) {
     var allSet = _.every(results, function (promise) {return promise.value;});
     console.log('promises', results);
     if (allSet) {
-      api[cmd](args);
+      api[cmd](args, results[2].value, results[3].value);
     } else {
       console.warn("\nYou're missing a file that is important for scrawl to run.\n\nREAD: Do you have scrawl.json and index.json in your current working directory (cwd)?\n\n Do they contain valid JSON?");
     }

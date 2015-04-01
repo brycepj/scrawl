@@ -12,9 +12,10 @@
   "author": "Bryce Johnson <brycepj@gmail.com> (http://devbryce.com/)",
   "license": "BSD-2-Clause",
   "dependencies": {
+    "fs-extra": "~0.17.0",
     "lodash": "~3.6.0",
-    "q": "~1.2.0",
+    "moment": "^2.9.0",
     "prompt": "~0.2.14",
-    "fs-extra": "~0.17.0"
+    "q": "~1.2.0"
   }
 }

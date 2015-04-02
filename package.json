@@ -12,6 +12,7 @@
   "author": "Bryce Johnson <brycepj@gmail.com> (http://devbryce.com/)",
   "license": "BSD-2-Clause",
   "dependencies": {
+    "colors": "^1.0.3",
     "fs-extra": "^0.18.0",
     "lodash": "~3.6.0",
     "markdown-pdf": "^5.2.0",

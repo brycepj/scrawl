@@ -1,8 +1,13 @@
 - clean up all the code / standardize things like var declarations, param names
-- add a list feature, that will filter the display
-- make sure everything is done responsibly -- make a list of things you shoud refactor
+- make sure everything is done responsibly -- make a list of things you should refactor
 	and what each refactoring would entail
+- document anything that is not obvious
 - remove build pdf step from open file and close
 - Better formatted messaging ("begin saving index" ?)
 - Ensure word count of arguments -- this will probably be important in the list section
+- Improve the list feature to use regex.
+- Consider indexing all of the content, so it can be searched as well.
 - Consider a way of creating a test library
+- Make build on new optional
+- consider cleaning only dist, not src. Not really a use case for that.
+- abstract out hasSubargs (maybe)

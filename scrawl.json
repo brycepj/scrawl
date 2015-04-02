@@ -1,4 +1,5 @@
-{ "openCmd": "vi",
+{
+  "openCmd": "vi",
   "metadata":[
     {
       "name":"title",

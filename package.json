@@ -1,7 +1,7 @@
 {
-  "name": "scrawl",
+  "name": "scrawl-notes",
   "version": "0.0.0",
-  "description": "simple note-taking cli",
+  "description": "a simple note taking, storage, and packaging cli",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

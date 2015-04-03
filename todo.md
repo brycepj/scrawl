@@ -1,5 +1,0 @@
-- Improve the list feature to use regex.
-- Consider indexing all of the content, so it can be searched as well.
-- Consider a way of creating a test library
-- Make build on new optional
-- consider cleaning only dist, not src. Not really a use case for that.

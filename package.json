@@ -1,13 +1,17 @@
 {
   "name": "scrawl-notes",
-  "version": "0.0.0",
-  "description": "a simple note taking, storage, and packaging cli",
+  "version": "0.0.111",
+  "description": "evernote for hackers",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "scrawl": "index.js"
+    "scrawl": "/index.js"
+  },
+  "repository":{
+   "type" : "git",
+   "url" : "https://github.com/brycepj/scrawl"
   },
   "author": "Bryce Johnson <brycepj@gmail.com> (http://devbryce.com/)",
   "license": "BSD-2-Clause",

@@ -76,6 +76,8 @@ e.g.
 
 Scrawl is very new. There's still a lot to add to make it really useful. 
 
+    - need to clean up how we separate metadata and the model
+    - we need all non-writable props kept separate
     - allow search by regex, not just keyword
     - enable search of note text (grep?)
     - enforce config interface

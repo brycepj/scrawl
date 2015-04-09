@@ -3,8 +3,6 @@
 ## What?
 Scrawl is a CLI for structuring, creating, organizing, indexing, searching, editing, pdf-ifying, and version-controlling your notes.
 
-It's ideal for students (and general note-takers) who know their way around the command line.
-
 ## Why?
 
 Scrawl lets you:
@@ -12,7 +10,6 @@ Scrawl lets you:
 - stay in a shell when you're taking notes.
 - keep your notes organized and accessible
 - track and distribute them with version control
-- look like a boss in class
 
 ## Get started
 
@@ -72,9 +69,7 @@ e.g.
 ```
 - `openCmd` is the command you want to execute to open your markdown files ('e.g.: "vi"`. If nothing is provided, the file will be opened with your default markdown editor.
 
-### roadmap
-
-Scrawl is very new. There's still a lot to add to make it really useful. 
+### things to do
 
     - need to clean up how we separate metadata and the model
     - we need all non-writable props kept separate

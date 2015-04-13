@@ -71,10 +71,6 @@ e.g.
 
 ### things to do
 
-    - fix metadata formatting (bold/italics in markdown)
-    - remove moment / fix date stuff
-    - need to clean up how we separate metadata and the model
-    - we need all non-writable props kept separate
     - allow search by regex, not just keyword
     - enable search of note text (grep?)
     - enforce config interface
@@ -83,4 +79,6 @@ e.g.
     - open --pdf [note_id]
     - integrate with git/github, handle committing, pushing
     - provide test coverage
-    
+    - use a program to handle opening across OSs
+    - update README for CLI usage tips
+    - figure out the best way to notate breaking changes in release-it

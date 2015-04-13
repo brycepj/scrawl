@@ -70,7 +70,7 @@ e.g.
 - `openCmd` is the command you want to execute to open your markdown files ('e.g.: "vi"`. If nothing is provided, the file will be opened with your default markdown editor.
 
 ### things to do
-
+    - Figure out a way to handle test environment
     - allow search by regex, not just keyword
     - enable search of note text (grep?)
     - enforce config interface

@@ -13,11 +13,12 @@ Scrawl lets you:
 
 ## Get started
 
-- `npm install -g scrawl-notes` in a directory you want to keep notes in. 
+- install the package globally: `npm install -g scrawl-notes` 
+- create a new directory that you want to keep notes in.
 - create a `scrawl.json` file in that same directory, and configure it to your liking (see below for instructions)
 - create a new note with `scrawl new`, and you're off to the races.
 
-* PROTIP: If you want to keep different sets of notes in different directories, but use local versions of scrawl, I'd add an alias to your .bashrc: `alias scrawl='./node_modules/scrawl-notes/index.js'`.*
+PROTIP: If you want to use only local versions of scrawl for whatever reason, add an alias to your .bashrc: `alias scrawl='./node_modules/scrawl-notes/index.js'`.
 ## API
 
 ### new

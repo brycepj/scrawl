@@ -1,6 +1,6 @@
 {
   "name": "scrawl-notes",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "a cli for note management",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,9 @@
     "type": "git",
     "url": "https://github.com/brycepj/scrawl"
   },
-  "bin" : { "scrawl" : "./index.js" } }
+  "bin": {
+    "scrawl": "./index.js"
+  },
   "author": "Bryce Johnson <brycepj@gmail.com> (http://devbryce.com/)",
   "license": "BSD-2-Clause",
   "dependencies": {

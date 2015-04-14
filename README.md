@@ -13,10 +13,11 @@ Scrawl lets you:
 
 ## Get started
 
-- `npm install scrawl-notes` in a directory you want to keep notes in. 
+- `npm install -g scrawl-notes` in a directory you want to keep notes in. 
 - create a `scrawl.json` file in that same directory, and configure it to your liking (see below for instructions)
 - create a new note with `scrawl new`, and you're off to the races.
 
+* PROTIP: If you want to keep different sets of notes in different directories, but use local versions of scrawl, I'd add an alias to your .bashrc: `alias scrawl='./node_modules/scrawl-notes/index.js'`.*
 ## API
 
 ### new
@@ -70,9 +71,6 @@ e.g.
 - `openCmd` is the command you want to execute to open your markdown files ('e.g.: "vi"`. If nothing is provided, the file will be opened with your default markdown editor.
 
 ### things to do
-    - Figure out a way to handle test environment
-    - allow search by regex, not just keyword
-    - enable search of note text (grep?)
     - enforce config interface
     - support multiple templates
     - help/man page within CLI

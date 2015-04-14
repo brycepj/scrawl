@@ -10,6 +10,7 @@
     "type": "git",
     "url": "https://github.com/brycepj/scrawl"
   },
+  "bin" : { "scrawl" : "./index.js" } }
   "author": "Bryce Johnson <brycepj@gmail.com> (http://devbryce.com/)",
   "license": "BSD-2-Clause",
   "dependencies": {

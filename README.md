@@ -30,7 +30,7 @@ Converts any recently changed markdown files in `notes_src` to PDFs, and drops t
 `scrawl clean` empties your `notes_dist` directory. `scrawl clean harder` cleans out `notes_src`, `notes_dist`, and `index.json`. Basically a clean slate. You will be prompted to confirm whether you really want to delete everything in either case.
 
 ### list [keyword]
-`scrawl list` prints a formatted list of all your notes. `scrawl list [keyword]` returns a formatted list of any notes with metadata containing that keyword. Current regex and other search options are not yet supported.
+`scrawl list` prints a formatted list of all your notes. `scrawl list [keyword]` returns a formatted list of any notes with metadata or text containing your keyword.
 
 ### open [note_id]
 Opens a markdown file for editing, using either your default markdown editor or the command line program you specify in `scrawl.json`.

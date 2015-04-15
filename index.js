@@ -1,20 +1,23 @@
 #! /usr/local/bin/node
 
+require("better-stack-traces/register");
+
 global.$require = function(name) {
    // ex: var inputs = $require('lib/validators/inputs');
     return require(__dirname + '/' + name);
 };
 
-// int deps
-
-var api = $require('lib/api');
-var v = $require('lib/validators').cli_input;
-
 // store and validate args
 
 var args = process.argv.splice(2);
-var cmd = v.cmd(args[0]);
+var cmd = args[0];
 
-// execute passed cmd with args
+// int deps
 
-api[cmd](args);
+if (cmd == 'init') {
+  $require('lib/api/init')();
+} else {
+  var v = $require('lib/validators').cli_input,
+      api = $require('lib/api/index');
+  api[v.cmd(cmd)](args);
+}

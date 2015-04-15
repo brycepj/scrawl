@@ -15,8 +15,9 @@ Scrawl lets you:
 
 - install the package globally: `npm install -g scrawl-notes` 
 - create a new directory that you want to keep notes in.
-- create a `scrawl.json` file in that same directory, and configure it to your liking (see below for instructions)
-- create a new note with `scrawl new`, and you're off to the races.
+- execute `scrawl init` and confirm the prompt
+- open the new `scrawl.json` file in that same directory, and configure it to your liking (see below for instructions)
+- create your first note with `scrawl new`. You're off to the races.
 
 PROTIP: If you want to use only local versions of scrawl for whatever reason, add an alias to your .bashrc: `alias scrawl='./node_modules/scrawl-notes/index.js'`.
 ## API
@@ -35,6 +36,9 @@ Converts any recently changed markdown files in `notes_src` to PDFs, and drops t
 
 ### open [note_id]
 Opens a markdown file for editing, using either your default markdown editor or the command line program you specify in `scrawl.json`.
+
+### init 
+Only run this when you're setting up a new directory of notes. Otherwise bad things will happen.
 
 ## config
 

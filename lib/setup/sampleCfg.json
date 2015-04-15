@@ -1,0 +1,66 @@
+{
+  "openCmd": "vi",
+  "metadata":[
+    {
+      "name":"title",
+      "description":"What is the title of the work?",
+      "required":true
+    },
+    {
+      "name":"author",
+      "description":"Who is the author?",
+      "required":true
+    },
+    {
+      "name":"year",
+      "description":"What year was the work published?",
+      "required":true
+    },
+    {
+      "name":"type",
+      "description":"Is this a book, article, book chapter, or essay?",
+      "required":true,
+      "default":"article"
+    },
+    {
+      "name":"topic",
+      "description":"What is the main topic of the work?",
+      "required": false
+    },
+    {
+      "name":"parent",
+      "description":"Is this part of a larger work to group other notes with?",
+      "required":false
+    }
+  ],
+  "subsections":[
+    {
+      "tag":"h4",
+      "text":"questions"
+    },
+    {
+      "tag":"h4",
+      "text":"criticisms"
+    },
+    {
+      "tag":"h4",
+      "text":"comments"
+    },
+    {
+      "tag":"h4",
+      "text":"tldr"
+    },
+    {
+      "tag":"h4",
+      "text":"quotes"
+    },
+    {
+      "tag": "h4",
+      "text": "key terms"
+    },
+    {
+      "tag": "h4",
+      "text": "tmp notes"
+    }
+  ]
+}

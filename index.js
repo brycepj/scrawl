@@ -1,7 +1,5 @@
 #! /usr/local/bin/node
 
-require("better-stack-traces/register");
-
 global.$require = function(name) {
    // ex: var inputs = $require('lib/validators/inputs');
     return require(__dirname + '/' + name);

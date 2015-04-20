@@ -81,7 +81,3 @@ e.g.
     - help/man page within CLI
     - open --pdf [note_id]
     - integrate with git/github, handle committing, pushing
-    - provide test coverage
-    - use a program to handle opening across OSs
-    - update README for CLI usage tips
-    - figure out the best way to notate breaking changes in release-it

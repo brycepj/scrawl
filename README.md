@@ -31,13 +31,23 @@ Converts any recently changed markdown files in `notes_src` to PDFs, and drops t
 `scrawl clean` empties your `notes_dist` directory. `scrawl clean harder` cleans out `notes_src`, `notes_dist`, and `index.json`. Basically a clean slate. You will be prompted to confirm whether you really want to delete everything in either case.
 
 ### list [keyword]
-`scrawl list` prints a formatted list of all your notes. `scrawl list [keyword]` returns a formatted list of any notes with metadata or text containing your keyword.
+`scrawl list` prints a formatted list of all your notes. `scrawl list [keyword]` returns a formatted list of any notes with metadata or text containing your keyword. The current implementation relies on grep, so you can pass any pattern you want to match.
 
 ### open [note_id]
 Opens a markdown file for editing, using either your default markdown editor or the command line program you specify in `scrawl.json`.
 
 ### init 
 Only run this when you're setting up a new directory of notes. Otherwise bad things will happen.
+
+### build
+Checks for changes to markdown files and updates the PDFs of any of the dirty ones. 
+
+### save
+Shorthand for git add -all && git commit -m ${new Date()} && git push
+
+### status
+A correlary of git status. Gives you an of what you've got in your notes repo, and what's dirty. 
+
 ## config
 
 - `metadata`: an array of objects specifying the metadata you would like to gather about each note, which will also be displayed the top of each note. 

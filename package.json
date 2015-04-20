@@ -1,6 +1,6 @@
 {
   "name": "scrawl-notes",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "a cli for note management",
   "main": "index.js",
   "scripts": {

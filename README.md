@@ -25,7 +25,6 @@ PROTIP: If you want to use only local versions of scrawl for whatever reason, ad
 ### new
 Creates a new markdown file with metadata at the top, followed by the subsections you specify. You will be prompted to provide metadata based on properties you declare in `scrawl.json`.
 
-### build
 Converts any recently changed markdown files in `notes_src` to PDFs, and drops them in `notes_dist`. New files are automatically built, so you don't need to run this everytime you create one.
 
 ### clean [harder]
@@ -39,7 +38,6 @@ Opens a markdown file for editing, using either your default markdown editor or 
 
 ### init 
 Only run this when you're setting up a new directory of notes. Otherwise bad things will happen.
-
 ## config
 
 - `metadata`: an array of objects specifying the metadata you would like to gather about each note, which will also be displayed the top of each note. 

@@ -33,8 +33,8 @@ Converts any recently changed markdown files in `notes_src` to PDFs, and drops t
 ### list [keyword]
 `scrawl list` prints a formatted list of all your notes. `scrawl list [keyword]` returns a formatted list of any notes with metadata or text containing your keyword. The current implementation relies on grep, so you can pass any pattern you want to match.
 
-### open [note_id]
-Opens a markdown file for editing, using either your default markdown editor or the command line program you specify in `scrawl.json`.
+### open [note_id] [--pdf]
+Opens a markdown file for editing (or the built PDF if `--pdf` is passed in), using either your default markdown editor or the command line program you specify in `scrawl.json`.
 
 ### init 
 Only run this when you're setting up a new directory of notes. Otherwise bad things will happen.
@@ -46,7 +46,7 @@ Checks for changes to markdown files and updates the PDFs of any of the dirty on
 Shorthand for git add -all && git commit -m ${new Date()} && git push
 
 ### status
-A correlary of git status. Gives you an of what you've got in your notes repo, and what's dirty. 
+A correlary of `git status` or scrawl notes. Gives you an idea of what you've got in your notes repo, and what's dirty. 
 
 ## config
 
@@ -87,5 +87,3 @@ e.g.
     - enforce config interface
     - support multiple templates
     - help/man page within CLI
-    - open --pdf [note_id]
-    - integrate with git/github, handle committing, pushing

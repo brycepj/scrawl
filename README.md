@@ -1,4 +1,4 @@
-# scrawl
+# scrawl (THIS PACKAGE IS CURRENTLY UNSTABLE)
 
 ## What?
 Scrawl is a CLI for structuring, creating, organizing, indexing, searching, editing, pdf-ifying, and version-controlling your notes.

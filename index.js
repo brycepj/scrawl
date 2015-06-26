@@ -1,4 +1,4 @@
-#! /usr/local/bin/node
+#! /usr/bin/env node
 
 global.$require = function(name) {
    // ex: var inputs = $require('lib/validators/inputs');

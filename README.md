@@ -40,7 +40,7 @@ Opens a markdown file for editing (or the built PDF if `--pdf` is passed in), us
 Only run this when you're setting up a new directory of notes. Otherwise bad things will happen.
 
 ### build
-Checks for changes to markdown files and updates the PDFs of any of the dirty ones.
+Checks for changes to markdown files and updates the PDFs of any of the dirty ones. If you add `email` and `pw` properties (your email address and the path to a local file containing your email password), scrawl will send you an email everytime you build with pdfs attached. This may be more configurable in the future.
 
 ### save
 Shorthand for git add -all && git commit -m ${new Date()} && git push

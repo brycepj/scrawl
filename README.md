@@ -83,7 +83,4 @@ e.g.
 ```
 - `openCmd` is the command you want to execute to open your markdown files ('e.g.: "vi"`. If nothing is provided, the file will be opened with your default markdown editor.
 
-### things to do
-    - enforce config interface
-    - support multiple templates
-    - help/man page within CLI
+- `email` and `pw` will trigger email notifications with changed files attached everytime you build. Currently, gmail accounts are the only ones this will work for.

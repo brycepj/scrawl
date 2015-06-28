@@ -9,7 +9,6 @@ global.$require = function(name) {
 
 var args = process.argv.splice(2);
 var cmd = args[0];
-var api = $require('lib/api/index');
 // int deps
 
 if (!cmd || cmd == '--help') {
@@ -19,7 +18,8 @@ if (!cmd || cmd == '--help') {
 if (cmd == 'init') {
   $require('lib/api/init')();
 } else {
-  var v = $require('lib/validators').cli_input,
-      api = $require('lib/api/index');
+  var v = $require('lib/validators').cli_input;
+  var api = $require('lib/api/index');
+
   api[v.cmd(cmd)](args);
 }
